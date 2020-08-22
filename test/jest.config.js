@@ -11,6 +11,6 @@ module.exports = {...rootConfig, ...{
 
 /*
     Arquivo de configuração local do jest.
-    Utilizado para testes funcionais.
+    Utilizado para testes funcionais/integração.
     Feito em .js pq é um trampo muito grande fazer em .ts
 */

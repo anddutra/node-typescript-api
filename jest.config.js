@@ -17,4 +17,7 @@ module.exports = {
     Arquivo de configuração global do jest.
     Utilizado para testes.
     Feito em .js pq é um trampo muito grande fazer em .ts
+    - https://jestjs.io/docs/pt-BR/getting-started
+    - https://jestjs.io/blog/2019/01/25/jest-24-refreshing-polished-typescript-friendly
+    - https://medium.com/@oieduardorabelo/jest-babel-e-typescript-configurando-testes-para-seu-projeto-201f001f45ef
 */

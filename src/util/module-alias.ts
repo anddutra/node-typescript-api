@@ -11,4 +11,6 @@ moduleAlias.addAliases({
 /*
     Definição de alias das pastas src e test para facilitar os imports dessas pastas.
     Funciona em conjunto com a configuração de paths do tsconfig.json
+    - https://dev.to/larswaechter/path-aliases-with-typescript-in-nodejs-4353
+    - https://medium.com/slackernoon/use-typescript-aliases-to-clean-up-your-import-statements-7210b7ec2af1
 */

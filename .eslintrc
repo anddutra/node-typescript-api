@@ -15,4 +15,6 @@
     Utilizado para que o projeto siga alguns padrões de código
     Ex.: Definido que sempre será utilizado ';' ao final do código, 
          o eslint vai garantir que o ';' vai ser colocado caso o dev esqueça
+    - https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/
+    - https://dev.to/melquisedecfelipe/configurando-eslint-no-node-com-express-e-typescript-58p9
   */
