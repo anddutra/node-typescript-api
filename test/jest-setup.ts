@@ -7,7 +7,7 @@ import supertest from 'supertest';
 
 /*Roda antes dos testes*/
 beforeAll(() => {
-    const server = new SetupServer();
-    server.init();
-    global.testRequest = supertest(server.getApp());
+  const server = new SetupServer();
+  server.init();
+  global.testRequest = supertest(server.getApp());
 });

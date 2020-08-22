@@ -12,28 +12,28 @@ import { Application } from 'express';
 */
 
 export class SetupServer extends Server {
-    /*Desta forma não precisa declarar a propriedade dentro da classe*/
-    constructor(private port = 3000) { 
-        super();
-    }
+  /*Desta forma não precisa declarar a propriedade dentro da classe*/
+  constructor(private port = 3000) {
+    super();
+  }
 
-    public init(): void {
-        this.setupExpress();
-        this.setupControlers();
-    }
+  public init(): void {
+    this.setupExpress();
+    this.setupControlers();
+  }
 
-    private setupExpress(): void {
-        /*Decodifica o body em json*/
-        this.app.use(bodyParser.json());
-    }
+  private setupExpress(): void {
+    /*Decodifica o body em json*/
+    this.app.use(bodyParser.json());
+  }
 
-    private setupControlers(): void {
-        const forecastController = new ForecastController();
-        this.addControllers([forecastController]);
-    }
+  private setupControlers(): void {
+    const forecastController = new ForecastController();
+    this.addControllers([forecastController]);
+  }
 
-    public getApp(): Application {
-        /*Retorna server para a realização dos testes funcionais/integração*/
-        return this.app;
-    }
+  public getApp(): Application {
+    /*Retorna server para a realização dos testes funcionais/integração*/
+    return this.app;
+  }
 }
