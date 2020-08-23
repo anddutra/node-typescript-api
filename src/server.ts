@@ -5,9 +5,8 @@ import { ForecastController } from './controllers/forecast';
 import { Application } from 'express';
 
 /*
-    overnightjs é feito em cima do express.
+    overnightjs é utilizado como uma camada em cima do express.
      - Facilita alguns pontos como a criação de rotas dos controllers utilizando decorator
-       - https://levelup.gitconnected.com/overnightjs-the-best-way-to-use-expressjs-with-typescript-35d71941aade
        - https://medium.com/@ricardotorquato/typescript-web-api-overnightjs-e3966e5a047c
 */
 
@@ -33,7 +32,7 @@ export class SetupServer extends Server {
   }
 
   public getApp(): Application {
-    /*Retorna server para a realização dos testes funcionais/integração*/
+    /*Retorna o server para a realização dos testes funcionais/integração*/
     return this.app;
   }
 }

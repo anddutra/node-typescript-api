@@ -1,0 +1,19 @@
+dependencies
+ - express -> Pck para criação de servidor e criação da API.
+ - body-parser -> Pck (Middleware) para coverter o body da requisição para json
+ - @overnightjs/core -> Camada em cima do express para facilitar criação de rotas com decorator.
+ - module-alias -> Utilizado para simplificar os imports utilizando @src em vez do caminho completo.
+
+devDependencies
+ - @types/* -> Types utilizados no projeto das pcks importadas.
+ - typescript -> Pck do typescript.
+ - ts-node-dev -> Utilizado para compilação e reload do projeto em tempo de execução.
+                  Utilizando ele não precisamos utilizar o 'nodemon + babel' ou 'nodemon + sucrase'.
+ - eslint -> Utilizado para padronizar o código e evitar eventuais erros.
+             Utiliza o arquivo .eslintrc para definir alguns padrões.
+ - prettier -> Utilizado para formatar e padronizar aspas, espaçamento, etc.
+               Utiliza o arquivo .prettierrc e o plugin Prettier para formatar em tempo de execução.
+ - jest -> Utilizado para a realização de testes.
+ - ts-jest -> Pck para utilizar jest com typescript.
+ - supertest -> Pck para testar HTTP. (Sobe o express em modo de teste).
+                Utilizado para testes end2end (Integração)

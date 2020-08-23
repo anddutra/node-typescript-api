@@ -1,46 +1,35 @@
 {
   "compilerOptions": {
-    "target": "es2019",
-    "moduleResolution": "node",
-    "module": "commonjs",
-    "lib": [
-      "es2019"
-    ],
-    "sourceMap": true,
-    "outDir": "dist",
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
+    "target": "es2019" /*Especifique a versão de destino ECMAScript*/,
+    "moduleResolution": "node" /*Determine como os módulos são resolvidos*/,
+    "module": "commonjs" /*Especifique a geração de código do módulo*/,
+    "lib": ["es2019"] /*Versão da lib que será utilizada no node*/,
+    "sourceMap": true /*Gera o .map do arquivo compilado. Mapeia o js para o ts para saber onde esta o erro no .ts*/,
+    "outDir": "dist" /*Local one ficas os arquivos compilados*/,
+    "strict": true /*Adiciona 'use strict' nos arquivos js*/,
+    "noImplicitAny": true /*Gera erros em expressões e declarações com tipo any*/,
+    "strictNullChecks": true /*Não permite declarar variaveis com null e undefined*/,
     "strictFunctionTypes": true,
-    "noImplicitThis": true,
-    "resolveJsonModule": true,
+    "noImplicitThis": true /*Gera erro em expressões this com tipo any*/,
+    "resolveJsonModule": true /*Inclui módulos importados com extensão .json*/,
     "alwaysStrict": true,
-    "removeComments": true,
-    "noImplicitReturns": true,
+    "removeComments": true /*Remove comentários dos arquivos compilados (js)*/,
+    "noImplicitReturns": true /*Gera erro quando nem todos os caminhos de código na função retornarem um valor*/,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true /*Permitir importações padrão de módulos sem exportação padrão*/,
+    "baseUrl": "." /*Diretório base para resolver nomes de módulos não relativos*/,
+    /*Utilizado para definir os modules-alias*/
     "paths": {
-      "@src/*": [
-        "./src/*"
-      ],
-      "@test/*": [
-        "./test/*"
-      ]
+      "@src/*": ["./src/*"],
+      "@test/*": ["./test/*"]
     },
-    "rootDirs": [
-      "./src",
-      "./test"
-    ],
-    "experimentalDecorators": true,
+    /*Especifica o diretório raiz dos arquivos de entrada*/
+    "rootDirs": ["./src", "./test"],
+    "experimentalDecorators": true /*Habilita a utilização de decorators*/,
     "emitDecoratorMetadata": true
   },
-  "include": [
-    "./src/**/*.ts",
-    "./test/**/*.ts"
-  ],
-  "exclude": [
-    "./node_modules/*",
-    "dist"
-  ]
+  /*Path dos arquivos que serão compilados*/
+  "include": ["./src/**/*.ts", "./test/**/*.ts"],
+  /*Path dos arquivos que não serão compilados*/
+  "exclude": ["./node_modules/*", "dist"]
 }
