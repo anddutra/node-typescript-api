@@ -3,6 +3,7 @@ dependencies
  - body-parser -> Pck (Middleware) para coverter o body da requisição para json
  - @overnightjs/core -> Camada em cima do express para facilitar criação de rotas com decorator.
  - module-alias -> Utilizado para simplificar os imports utilizando @src em vez do caminho completo.
+ - axios -> Realiza chamadas HTTP para APIs externas.
 
 devDependencies
  - @types/* -> Types utilizados no projeto das pcks importadas.
