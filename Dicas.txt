@@ -4,6 +4,8 @@ dependencies
  - @overnightjs/core -> Camada em cima do express para facilitar criação de rotas com decorator.
  - module-alias -> Utilizado para simplificar os imports utilizando @src em vez do caminho completo.
  - axios -> Realiza chamadas HTTP para APIs externas.
+ - config -> Utilizado para realizar configurações que serão utilizadas no projeto (end API, banco de dados).
+             Ficam na pasta config e são carregadas automaticamente quando importado o config.
 
 devDependencies
  - @types/* -> Types utilizados no projeto das pcks importadas.
